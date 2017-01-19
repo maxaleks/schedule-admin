@@ -1,0 +1,8 @@
+
+@import '../../css/variables';
+
+.input {
+    &.has-error {
+        border-color: $color-red;
+    }
+}

@@ -1,0 +1,158 @@
+
+.group {
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 400px;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 10px;
+    margin-right: 20px;
+
+    &:first-child {
+        margin-left: 5px;
+    }
+    &:last-child {
+        margin-right: 5px;
+    }
+    .group-number {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid rgb(129, 129, 129);
+    }
+    .weeks {
+        display: flex;
+        flex-direction: row;
+
+        .week {
+            width: 400px;
+            //margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+
+            &:first-child {
+                .day {
+                    border-left: 0;
+                }
+                .week-number {
+                    border-left: 0;
+                }
+            }
+            &:last-child {
+                .day {
+                    border-right: 0;
+                }
+                .week-number {
+                    border-right: 0;
+                }
+            }
+            .week-number {
+                text-align: center;
+                padding-top: 10px;
+                border: 1px solid rgb(129, 129, 129);
+                border-top: 0;
+                font-weight: bold;
+            }
+            .day {
+                //margin-bottom: 20px;
+                padding-left: 30px;
+                border: 1px solid rgb(129, 129, 129);
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+                .day-name {
+                    width: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-30%);
+
+                    p {
+                        -webkit-transform: rotate(-90deg);
+                        -moz-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                    }
+                }
+                .day-name-bg {
+                    background-color: rgb(247, 247, 247);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 30px;
+                    height: 100%;
+                }
+                .couples {
+                    width: 100%;
+
+                    .pair {
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        border-top: 1px solid #000;
+                        border-left: 1px solid #000;
+                        display: flex;
+                        flex-direction: row;
+
+                        &.to-copy {
+                            background-color: rgb(130, 255, 111);
+                        }
+                        &.in-copy-array {
+                            background-color: rgb(255, 200, 107);
+                        }
+                        .pair-number {
+                            width: 30px;
+                            height: 100%;
+                            text-align: center;
+                            border-right: 1px solid;
+
+                            &.green {
+                                background-color: rgb(169, 255, 156);
+                            }
+                            &.yellow {
+                                background-color: rgb(255, 217, 153);
+                            }
+                            &.red {
+                                background-color: rgb(255, 152, 142);
+                            }
+                        }
+                        .pair-info {
+                            width: calc(100% - 40px);
+                            cursor: pointer;
+                            padding: 0 5px;
+                            overflow: hidden;
+
+                            p {
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                            }
+                            strong {
+                                font-weight: normal;
+                                color: green;
+                                margin-right: 5px;
+                            }
+                            &:hover {
+                                background-color: rgba(245, 245, 245, 0.8);
+                            }
+                        }
+                        .pair-subgroup {
+                          width: 20px;
+                          height: 100%;
+                          text-align: center;
+                          border-left: 1px solid;
+                        }
+                        &:first-child {
+                            border-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

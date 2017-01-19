@@ -1,0 +1,63 @@
+.manage-popup.specialities {
+    .item {
+        clear: both;
+        border-bottom: 1px dotted rgb(158, 158, 158);
+        padding: 10px;
+
+        &.editing {
+            line-height: 34px;
+            padding-left: 0;
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+        .name, .fa-pencil, input {
+            float: left;
+        }
+        .name {
+            width: calc(100% - 38px);
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .form-group {
+            margin: 0;
+        }
+        input.name {
+            width: calc(100% - 50px);
+            margin-right: 10px;
+        }
+        .fa {
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .fa-pencil {
+            color: rgb(62, 157, 255);
+            margin-right: 10px;
+        }
+        .fa-check {
+            color: rgb(22, 204, 0);
+            margin-right: 10px;
+        }
+        .fa-trash, .fa-ban {
+            color: rgb(255, 91, 91);
+        }
+        .clear-block {
+            clear: both;
+        }
+    }
+    .add {
+        margin-bottom: 60px;
+
+        .add-input, .add-btn {
+            float: left;
+        }
+        .add-input {
+            width: calc(100% - 100px);
+            margin-right: 10px;
+        }
+        .add-btn {
+            width: 90px;
+        }
+    }
+}

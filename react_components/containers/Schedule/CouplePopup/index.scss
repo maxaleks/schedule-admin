@@ -1,0 +1,54 @@
+
+
+.couple-form {
+    .time-input {
+        display: inline-block;
+
+        input {
+            margin: 0 5px;
+            width: 65px;
+            font-size: 14px;
+            height: 34px;
+            padding: 6px 12px;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+    .radio-btns-block {
+        width: 50%;
+        float: left;
+        text-align: left;
+
+        input {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .time-block {
+        margin: 20px 0 15px 0;
+        width: 34%;
+        float: left;
+    }
+    .room-block, .house-block {
+        margin-top: 20px;
+        width: 33%;
+        float: left;
+    }
+    .house-block {
+        padding-right: 15px;
+    }
+    .subject-block, .teacher-block {
+        width: 50%;
+        float: left;
+    }
+    .subject-block {
+        clear: both;
+        padding-right: 7px;
+    }
+    .teacher-block {
+        padding-left: 7px;
+    }
+}

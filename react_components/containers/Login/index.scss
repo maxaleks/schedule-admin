@@ -1,0 +1,16 @@
+
+.login {
+    height: 100vh;
+    position: relative;
+
+    .login-form {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        width: 100%;
+
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+}
